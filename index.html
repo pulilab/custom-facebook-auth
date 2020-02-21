@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test webpage</title>
+</head>
+<body>
+<h1>Test</h1>
+<p>
+    Get <a href="https://ngrok.com/">ngrok</a> and python <br>
+    Run <u>python -m SimpleHTTPServer 9000</u> to get a static web server<br>
+    Run <u>ngrok http -bind-tls=true 9000</u> and go to the url provided by ngrok <br>
+    <b>This url must be added to your facebook app!</b>
+</p>
+<p>
+    Provide Client Id: <input type="text" id="fb-client-id">
+</p>
+<p>
+    <button id="fb-button">Open facebook</button>
+</p>
+Error:
+<p style="color:red" id="fb-error"></p>
+Result:
+<p id="fb-result"></p>
+
+<script type="module" src="test.js"></script>
+</body>
+</html>
